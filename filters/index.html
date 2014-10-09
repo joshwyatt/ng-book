@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>On Interpolation</title>
+    <script src="../lib/angular/angular.js"></script>
+  </head>
+  <body>
+    <div ng-controller="MyController">
+      <pre>Uppercase {{ text | uppercase }}</pre>
+      <pre>Using js uppercase {{ name }}</pre>
+      <pre>Round to 2 places 123.2234 {{ 123.2234 | number:2 }}</pre>
+      <pre>Currency {{ 123 | currency }}</pre>
+      <h3>{{ 'dates' | uppercase }}</h3>
+      <pre>Date {{ today | date }}</pre>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
