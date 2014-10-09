@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>On Modules</title>
+    <script src="../lib/angular/angular.js"></script>
+  </head>
+  <body>
+    <div ng-controller="MyController">
+      <h3>{{ data.name }}</h3>
+    </div>
+
+    <div ng-controller="AddingController">
+      <button ng-click="calc.add(1)">Add</button>
+      <button ng-click="calc.substract(1)">Subtract</button>
+      <h4>Total: {{ calc.counter }}</h4>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
